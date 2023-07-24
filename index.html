@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="ComenzarCuentaRegresiva()">
+    <header>
+        <h1>Responde a las preguntas tan rápido como puedas <span id="CuentaRegresiva"></span></h1>
+    </header>
+        <div class="cuestions">
+            <p> 1. Cúal es la capital de Francia?</p>
+            <input type="text" id="Respuesta1">
+            <p> 2. (7 * 5 ) + 15 </p>
+            <input type="text" id="Respuesta2">
+            <p> 3. Símbolo químico del agua</p>
+            <input type="text" id="Respuesta3">
+            <p> 4. Año del descubrimiento de América</p>
+            <input type="text" id="Respuesta4">
+            <p> 5. Nombre de los 4 Beatles</p>
+            <input type="text" id="Respuesta5">
+        </div>
+        <div class="botones">
+            <button class="botones__Edit" onclick="finalizado()">Terminé!</button>
+            <button class="botones__Edit" onclick="volverAintentar()">Volver a Intentar</button>
+        </div>
+
+        <audio id="audioFinal">
+            <source src="Sonidos/gameover.mp3" type="audio/mpeg">
+            Sonido no Habilitado
+        </audio>
+
+        <script src="./JScript/comportamientos.js"></script>
+</body>
+</html>
